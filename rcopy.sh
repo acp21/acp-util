@@ -27,6 +27,7 @@ if [ $pull ]; then
     echo -en "Pull mode will download information onto your local machine, Are you sure?\n y/n:"
     read answer
     if [ $answer = 'y' ]; then
+	folder=$2 # Reselect folder variable since -p is technically first argument now
         rclone copy $remote:$folder ~/$folder -P
     fi
     exit 1
