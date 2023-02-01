@@ -2,7 +2,7 @@
 
 # Script to run copy command to rclone remote based on passed folder argument
 
-remote=GDrive # Intended remote to use
+remote=drive # Intended remote to use
 folder=$1 # Select folder as first positional argument
 
 if [ $# -lt 1 ]; then
